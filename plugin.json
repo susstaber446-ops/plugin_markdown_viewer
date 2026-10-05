@@ -1,0 +1,32 @@
+{
+  "$schema": "https://pocket-ide.dev/schemas/plugin-v1.json",
+  "id": "plugin_markdown_viewer",
+  "name": "Markdown & Mermaid Viewer",
+  "version": "1.0.0",
+  "minAppVersion": "1.0.0",
+  "description": "Rich GitHub Flavored Markdown viewer with interactive Mermaid diagrams, tables, and syntax highlighting.",
+  "author": "susstaber446-ops",
+  "category": "viewer",
+  "tags": ["markdown", "mermaid", "preview", "diagrams", "docs"],
+  "icon": "book-outline",
+  "fileExtensions": [".md", ".markdown"],
+  "capabilities": {
+    "filePreview": true,
+    "mermaid": true,
+    "contextMenuAction": "Preview Markdown & Mermaid"
+  },
+  "contributes": {
+    "explorerContextMenu": [
+      {
+        "id": "open-rendered",
+        "title": "Preview Markdown & Mermaid",
+        "action": "open_custom_viewer"
+      },
+      {
+        "id": "open-code",
+        "title": "Open in Code Editor",
+        "action": "open_code_editor"
+      }
+    ]
+  }
+}
